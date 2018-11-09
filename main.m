@@ -1,4 +1,5 @@
 clear all;
+
 num_classes = 4;
 num_features = 4; 
 dirs = 2;
