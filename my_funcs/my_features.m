@@ -15,9 +15,6 @@ for row = 1:size(Q,1)
         newGL = my_glcm(x(row:row+(sow-1),col:col+(sow-1)), 16, d, theta);
         [auxQ(1), auxQ(2)] = q_features(newGL);
         Q(row,col,:) = auxQ(:);
-%         for q = 1:nof
-%             Q(row,col,q) = auxQ(q);
-%         end
         step = step + 1;
         if getappdata(f,'canceling')
             break

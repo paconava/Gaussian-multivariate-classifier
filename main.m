@@ -24,6 +24,7 @@ for i = 1:num_classes
 end
 
 train_img = zeros(tm_r, tm_c, num_features);
+% Adjusting to 16 gray-levels
 mos1 = my_quantizer(mosaic1_train);
 % Feature images
 train_img(:,:,1:num_features/dirs) = my_features(mos1, windowSize, 1, 0, num_features/dirs);

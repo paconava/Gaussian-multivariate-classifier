@@ -1,6 +1,5 @@
 function [ mapped ] = my_mapper( img, mv, cm, n_feat, n_classes )
-%UNTITLED3 Summary of this function goes here
-%   Detailed explanation goes here
+
 warning('off','all');
 f = waitbar(0,'1','Name','Classifying data...',...
     'CreateCancelBtn','setappdata(gcbf,''canceling'',1)');

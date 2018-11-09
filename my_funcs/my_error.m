@@ -1,6 +1,4 @@
 function [ ctv, conf_m ] = my_error( tm, mi )
-%UNTITLED4 Summary of this function goes here
-%   Detailed explanation goes here
 ctv = zeros(1, 4);
 t_test = 0;
 t = zeros(1, 4);

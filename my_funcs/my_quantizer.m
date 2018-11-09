@@ -1,7 +1,5 @@
 function [ r1 ] = my_quantizer( x )
-%UNTITLED Summary of this function goes here
-%   Detailed explanation goes here
-% Quantizing the image to 8 Gray Levels
+% Quantizing the image to 16 Gray Levels
 for i = 1:numel(x)
     if (x(i)>=0 && x(i)<=15)
         x(i) = 1;
