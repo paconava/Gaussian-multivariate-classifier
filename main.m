@@ -13,13 +13,11 @@ load('training_mask.mat');
 % Padding on mask to match feature image size
 train_msk = training_mask(sowC:end-sowF, sowC:end-sowF);
 [tm_r, tm_c] = size(train_msk);
-% c_mat = zeros(tm_r, tm_c, num_classes);
 nof = zeros(1,num_classes);
 % Total classified pixels
 totalnz = sum(sum(train_msk ~= 0));
 % Number of pixels for each class
 for i = 1:num_classes
-%     c_mat(:,:,i) = (train_msk == i);
     nof(i) = sum(sum(train_msk == i));
 end
 
